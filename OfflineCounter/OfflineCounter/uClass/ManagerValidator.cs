@@ -13,7 +13,9 @@
 
             if (tecla_press.Key == ConsoleKey.Enter)
             {
-                
+                Util util = new Util();
+
+                int statuscode = util.RequestInternet();
             }
             
             if(tecla_press.Key == ConsoleKey.Escape)
