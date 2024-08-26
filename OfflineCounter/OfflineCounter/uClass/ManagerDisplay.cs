@@ -66,5 +66,41 @@
             Console.WriteLine();
             Console.WriteLine("----------------------------------------------------------------------------------------------------");
         }
+
+        public void Display_Code0(int loop_vezes)
+        {
+            Console.Clear();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            Console.WriteLine("\n                                   OFFLINE COUNTER IN MILLION                                   \n");
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Console.WriteLine("     StatusCode da requisição: 0.");
+            Console.WriteLine("     Esse código foi criado por mim e indica falha na conexão. ");
+            Console.WriteLine("     Em outras palavras a sua internet não está funcionando como deveria.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Console.WriteLine();
+            Console.WriteLine($"     Número de vezes que o sistema console contou até o milhão: {loop_vezes} vezes.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine("     Iniciciando loop em 3 segundos: contagem até o milhão...");
+            Console.WriteLine();
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+        }
     }
 }
