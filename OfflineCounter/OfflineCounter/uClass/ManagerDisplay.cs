@@ -29,5 +29,42 @@
             Console.WriteLine();
             Console.WriteLine("----------------------------------------------------------------------------------------------------");
         }
+
+        public void Display_Code200(int loop_vezes)
+        {
+            Console.Clear();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            Console.WriteLine("\n                                   OFFLINE COUNTER IN MILLION                                   \n");
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Console.WriteLine("     StatusCode da requisição: 200.");
+            Console.WriteLine("     Isso quer dizer que a requisição foi um sucesso!");
+            Console.WriteLine("     Em outras palavras a sua internet está funcionando normalmente.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Console.WriteLine();
+            Console.WriteLine($"     Número de vezes que o sistema console contou até o milhão: {loop_vezes} vezes.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine("     Pressione ENTER para reiniciar o programa...");
+            Console.WriteLine("     Pressione ESC para sair do programa...    ");
+            Console.WriteLine();
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+        }
     }
 }

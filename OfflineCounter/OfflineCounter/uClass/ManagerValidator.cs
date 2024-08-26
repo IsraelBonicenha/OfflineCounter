@@ -2,6 +2,10 @@
 {
     public class ManagerValidator
     {
+        ManagerLoops managerLoops = new ManagerLoops();
+
+        ManagerDisplay managerdisplay = new ManagerDisplay();
+
         public void Validate_KeyPress_One()
         {
             var tecla_press = Console.ReadKey();
@@ -30,7 +34,9 @@
         {
             if (statuscode == 200)
             {
-                // Sucesso
+                int loop_vezes = managerLoops.loop_vezes;
+
+                managerdisplay.Display_Code200(loop_vezes);
             }
 
             if (statuscode == 0) 
