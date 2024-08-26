@@ -98,7 +98,7 @@
 
             Console.WriteLine("----------------------------------------------------------------------------------------------------");
             Console.WriteLine();
-            Console.WriteLine("     Iniciciando loop em 3 segundos: contagem até o milhão...");
+            Console.WriteLine("     Iniciciando loop em 5 segundos: contagem até o milhão...");
             Console.WriteLine();
             Console.WriteLine("----------------------------------------------------------------------------------------------------");
         }

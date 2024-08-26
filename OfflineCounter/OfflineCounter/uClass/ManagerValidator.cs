@@ -44,6 +44,8 @@
                 int loop_vezes = managerLoops.loop_vezes;
 
                 managerdisplay.Display_Code0(loop_vezes);
+
+                Thread.Sleep(5000);
             }
 
             if(statuscode != 0 &&  statuscode != 200)
