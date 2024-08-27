@@ -102,5 +102,42 @@
             Console.WriteLine();
             Console.WriteLine("----------------------------------------------------------------------------------------------------");
         }
+
+        public void Display_CodeDiff(int statuscode)
+        {
+            Console.Clear();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            Console.WriteLine("\n                                   OFFLINE COUNTER IN MILLION                                   \n");
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Console.WriteLine($"     StatusCode da requisição: {statuscode}.");
+            Console.WriteLine("     Não faço a mínima ideia do que isso significa.");
+            Console.WriteLine("     Mas se houve resposta do server é sinal que está funcionando.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Console.WriteLine();
+            Console.WriteLine($"     Número de vezes que o sistema console contou até o milhão: {loop_vezes} vezes.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine("     Pressione ENTER para reiniciar o programa...");
+            Console.WriteLine("     Pressione ESC para sair do programa...    ");
+            Console.WriteLine();
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+        }
     }
 }

@@ -61,7 +61,7 @@
 
             if(statuscode != 0 &&  statuscode != 200)
             {
-                // Não faço a mínima ideia, mas se houve resposta é porque está funcionando
+                managerdisplay.Display_CodeDiff(statuscode);
             }
         }
     }
