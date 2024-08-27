@@ -7,8 +7,10 @@
         ManagerLoops managerLoops = new ManagerLoops();
 
 
-        public void Validate_KeyPress_One()
+        public bool Validate_KeyPress_One()
         {
+            bool encerrar_program = false;
+
             var tecla_press = Console.ReadKey();
 
             while (tecla_press.Key != ConsoleKey.Enter && tecla_press.Key != ConsoleKey.Escape) 
@@ -35,8 +37,10 @@
             
             if(tecla_press.Key == ConsoleKey.Escape)
             {
-                Environment.Exit(0);
+                encerrar_program = true;
             }
+
+            return encerrar_program;
         }
 
         private void Validate_Request(int statuscode)
@@ -61,7 +65,9 @@
 
             if(statuscode != 0 &&  statuscode != 200)
             {
-                managerdisplay.Display_CodeDiff(statuscode);
+                int loop_vezes = managerLoops.loop_vezes;
+
+                managerdisplay.Display_CodeDiff(statuscode, loop_vezes);
             }
         }
     }

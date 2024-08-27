@@ -103,7 +103,7 @@
             Console.WriteLine("----------------------------------------------------------------------------------------------------");
         }
 
-        public void Display_CodeDiff(int statuscode)
+        public void Display_CodeDiff(int statuscode, int loop_vezes)
         {
             Console.Clear();
 
