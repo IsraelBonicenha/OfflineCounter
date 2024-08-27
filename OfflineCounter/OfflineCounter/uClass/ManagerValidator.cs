@@ -20,9 +20,17 @@
             {
                 Util util = new Util();
 
-                int statuscode = util.RequestInternet();
+                int codestatus = 0;
 
-                Validate_Request(statuscode);
+                // loop para garantir que o programa seja executado enquanto a request for igual a 0.
+                while (codestatus == 0)
+                {
+                    int statuscode = util.RequestInternet();
+
+                    Validate_Request(statuscode);
+
+                    codestatus = statuscode;
+                } 
             }
             
             if(tecla_press.Key == ConsoleKey.Escape)
