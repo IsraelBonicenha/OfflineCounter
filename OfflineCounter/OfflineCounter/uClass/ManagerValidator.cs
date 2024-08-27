@@ -2,9 +2,10 @@
 {
     public class ManagerValidator
     {
+        ManagerDisplay managerdisplay = new ManagerDisplay();
+
         ManagerLoops managerLoops = new ManagerLoops();
 
-        ManagerDisplay managerdisplay = new ManagerDisplay();
 
         public void Validate_KeyPress_One()
         {
@@ -46,6 +47,8 @@
                 managerdisplay.Display_Code0(loop_vezes);
 
                 Thread.Sleep(5000);
+
+                managerLoops.LoopSystem();
             }
 
             if(statuscode != 0 &&  statuscode != 200)
