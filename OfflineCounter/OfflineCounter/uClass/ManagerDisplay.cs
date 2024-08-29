@@ -1,7 +1,13 @@
 ﻿namespace OfflineCounter.uClass
 {
+    /// <summary>
+    /// Responsável por exbir layouts padrões.
+    /// </summary>
     public class ManagerDisplay
     {
+        /// <summary>
+        /// Método que exibe a tela inicial do sistema.
+        /// </summary>
         public void Display_Inicial()
         {
             Console.Clear();
@@ -30,6 +36,10 @@
             Console.WriteLine("----------------------------------------------------------------------------------------------------");
         }
 
+        /// <summary>
+        /// Método que exibe a tela quando statuscode for igual a 200.
+        /// </summary>
+        /// <param name="loop_vezes">Número de vezes que o sistema contou até um milhão.</param>
         public void Display_Code200(int loop_vezes)
         {
             Console.Clear();
@@ -67,6 +77,10 @@
             Console.WriteLine("----------------------------------------------------------------------------------------------------");
         }
 
+        /// <summary>
+        /// Método que exibe a tela quando a requisição for mal sucedida.
+        /// </summary>
+        /// <param name="loop_vezes">Número de vezes que o sistema contou até um milhão.</param>
         public void Display_Code0(int loop_vezes)
         {
             Console.Clear();
@@ -103,6 +117,11 @@
             Console.WriteLine("----------------------------------------------------------------------------------------------------");
         }
 
+        /// <summary>
+        /// Método que exibe a tela quando statuscode for diferente de 200.
+        /// </summary>
+        /// <param name="statuscode">Statuscode retornado pela requisição.</param>
+        /// <param name="loop_vezes">Número de vezes que o sistema contou até um milhão.</param>
         public void Display_CodeDiff(int statuscode, int loop_vezes)
         {
             Console.Clear();

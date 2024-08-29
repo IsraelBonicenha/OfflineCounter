@@ -1,12 +1,18 @@
 ﻿namespace OfflineCounter.uClass
 {
+    /// <summary>
+    /// Responsável por fazer validações e tomadas de decisões no sistema.
+    /// </summary>
     public class ManagerValidator
     {
         ManagerDisplay managerdisplay = new ManagerDisplay();
 
         ManagerLoops managerLoops = new ManagerLoops();
 
-
+        /// <summary>
+        /// Método que valida a tecla pressionada pelo usuário.
+        /// </summary>
+        /// <returns>booleano para identificar se a execução deve terminar ou não. </returns>
         public bool Validate_KeyPress_One()
         {
             bool encerrar_program = false;
@@ -43,6 +49,10 @@
             return encerrar_program;
         }
 
+        /// <summary>
+        /// Método que toma a decisão com base no statuscode da requisição.
+        /// </summary>
+        /// <param name="statuscode">O código retornado pela requisição.</param>
         private void Validate_Request(int statuscode)
         {
             if (statuscode == 200)
